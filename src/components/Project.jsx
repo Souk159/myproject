@@ -1,8 +1,8 @@
 import React from 'react'
 import project1 from "../assets/project1.png";
-import project2 from "../assets/project2.png";
-import project3 from "../assets/project3.png";
-import project4 from "../assets/project4.png";
+import project2 from "../assets/Project2.png";
+import project3 from "../assets/Project3.png";
+import project4 from "../assets/Project4.png";
 
 const projects = [
     {
