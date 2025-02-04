@@ -1,36 +1,39 @@
 import React from 'react'
+import project1 from "../assets/project1.png";
+import project2 from "../assets/project2.png";
+import project3 from "../assets/project3.png";
+import project4 from "../assets/project4.png";
 
-const service = [
+const projects = [
     {
         id: 1,
-        title: "Web Design",
-        description: "Creating visually appealing and user-friendly web designs."
+        name: "POS C#",
+        image: project1,
+        technologies:" C#",
+        github: "https://github.com/Souk159/POS-project"
     },
     {
         id: 2,
-        title: "Frontend Development",
-        description: "Building responsive and interactive user interfaces."
+        name: "sheet C#",
+        image: project2,
+        technologies:" C# computer vision",
+        github: "https://github.com/Souk159/sheet-project"
     },
     {
         id: 3,
-        title: "Backend Development",
-        description: "Developing robust server-side logic and database."
+        name: "Computer vision C#",
+        image: project3,
+        technologies:" C# computer vision",
+        github: "https://github.com/Souk159/Computer-vision"
     },
     {
         id: 4,
-        title: "Mobile app Design",
-        description: ""
+        name: "Vue js dailies",
+        image: project4,
+        technologies:" Vue js + Node js",
+        github: "https://github.com/Souk159/dailiesvue"
     },
-    {
-        id: 5,
-        title: "Mobile Development",
-        description: ""
-    },
-    {
-        id: 6,
-        title: "Software Development",
-        description: ""
-    }
+    
 ]
 
 const Project = () => {
@@ -38,6 +41,20 @@ const Project = () => {
     <div className="bg-black text-white py-20" id="project">
         <div  className="container mx-auto px-8 md:px-16 lg:px-24">
             <h2 className="text-4xl font-bold text-center mb-12"> My Projects</h2>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+                {projects.map(project =>(
+                    <div key={project.id} className='bg-gray-800 p-6 rounded-lg hover:shadow-lg
+                    transform transition-transform duration-300 hover:scale-105'>
+                        <img src={project.image} alt={project.name} className='rounded-lg mb-4 w-full h-48 object-cover' />
+                        <h3 className='text-2xl font-bold mb-2'>{project.name}</h3>
+                        <p className='text-gray-400 mb-4'>{project.technologies}</p>
+                        <a href={project.github} className='inline-block bg-gradient-to-r
+                        from-green-400 to-blue-500 text-white px-4 py-2 rounded-full' target='_blank'
+                        rel='noopener noreferrer'>Github</a>
+                    </div>
+                ))}
+
+            </div>
         </div>
     </div>
   )

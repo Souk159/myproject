@@ -1,5 +1,5 @@
 import React from "react";
-import AboutImage from "../assets/Hero1.jpeg";
+import AboutImage from "../assets/Hero2.jpeg";
 const About = () => {
   return (
     <div className="bg-black text-white py-20" id="about">
@@ -75,6 +75,16 @@ const About = () => {
               <div className="flex items-center">
                 <label htmlFor="htmlandcss" className="w-2/12">
                   laravel
+                </label>
+                <div className="grow bg-gray-800 rounded-full h-2.5">
+                  <div
+                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full transform transition-transform duration-300 hover:scale-105 w-5/12"
+                  ></div>
+                </div>
+              </div>
+              <div className="flex items-center">
+                <label htmlFor="htmlandcss" className="w-2/12">
+                  Vue js
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div

@@ -4,17 +4,17 @@ const service = [
     {
         id: 1,
         title: "Web Design",
-        description: "Creating visually appealing and user-friendly web designs."
+        description: ""
     },
     {
         id: 2,
         title: "Frontend Development",
-        description: "Building responsive and interactive user interfaces."
+        description: ""
     },
     {
         id: 3,
         title: "Backend Development",
-        description: "Developing robust server-side logic and database."
+        description: ""
     },
     {
         id: 4,
